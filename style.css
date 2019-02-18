@@ -139,6 +139,7 @@ h2 {
 	position: relative;
 	visibility: visible;
 	opacity: 1;
+	width: 350px;
 	margin-top: 30px;
 	text-align: justify;
 	text-decoration: none;
