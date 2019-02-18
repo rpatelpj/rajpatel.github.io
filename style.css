@@ -1,0 +1,145 @@
+body {
+	background-color: gray;
+	text-align: center;
+	font-family: "Helvetica", sans-serif;
+}
+
+.center {
+	display: inline-block;
+	max-width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	margin: 50px 0px 0px 0px;
+	font-size: 5em;
+	color: white;
+}
+
+h2 {
+	margin: 10px 0px 20px 0px;
+	font-size: 1.7em;
+	color: white;
+}
+
+.return {
+	display: block;
+}
+
+.icon {
+	display: inline-block;
+	width: 30px;
+    height: 30px;
+	margin: 10px;
+	padding: 20px;
+	border: 2px solid #fff;
+    border-radius: 50%;
+    line-height: 30px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+    font-size: 2em;
+    color: white;
+    transition: color 0.5s;
+}
+
+.icon:hover {
+	border: 2px solid deepskyblue;
+	color: deepskyblue;
+}
+
+.diamond {
+	display: inline-block;
+	margin-top: 60px;
+	padding: 20px;
+	border: solid #f79533;
+	border-width: 3px;
+	border-radius: 5px;
+	animation: color_bounce 2s infinite;
+}
+
+@keyframes color_bounce {
+	0% {
+		transform: translateY(0) rotate(45deg);
+		border: solid #f79533;
+	}
+	7% {
+		border: solid #f37055;
+	}
+	15% {
+		border: solid #ef4e7b;
+	}
+	20% {
+		transform: translateY(0) rotate(45deg);
+	}
+	22% {
+		border: solid #a166ab;
+	}
+	29% {
+		border: solid #5073b8;
+	}
+	36% {
+		border: solid #1098ad;
+	}
+	40% {
+		transform: translateY(-30px) rotate(45deg);
+	}
+	43% {
+		border: solid #07b39b;
+	}
+	50% {
+		transform: translateY(0) rotate(45deg);
+	}
+	50% {
+		border: solid #6fba82;
+	}
+	58% {
+		border: solid #07b39b;
+	}
+	60% {
+		transform: translateY(-15px) rotate(45deg);
+	}
+	65% {
+		border: solid #1098ad;
+	}
+	72% {
+		border: solid #5073b8;
+	}
+	79% {
+		border: solid #a166ab;
+	}
+	80% {
+		transform: translateY(0) rotate(45deg);
+	}
+	87% {
+		border: solid #ef4e7b;
+	}
+	94% {
+		border: solid #f37055;
+	}
+	100% {
+		transform: translateY(0) rotate(45deg);
+	}
+}
+
+#BIO {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	transition: opacity 1s;
+}
+
+#BIO:target {
+	display: inline-block;
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+	margin-top: 30px;
+	text-decoration: none;
+	color: white;
+}
