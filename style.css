@@ -16,7 +16,9 @@ body {
 h1 {
 	margin: 50px 0px 0px 0px;
 	font-size: 5em;
-	color: white;
+	background: linear-gradient(to bottom, #4169E1, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -61,7 +63,7 @@ h2 {
 
 @keyframes color_bounce {
 	0% {
-		transform: translateY(0) rotate(45deg);
+		transform: rotate(45deg);
 		border: solid #f79533;
 	}
 	7% {
@@ -71,7 +73,7 @@ h2 {
 		border: solid #ef4e7b;
 	}
 	20% {
-		transform: translateY(0) rotate(45deg);
+		transform: rotate(45deg);
 	}
 	22% {
 		border: solid #a166ab;
@@ -83,13 +85,13 @@ h2 {
 		border: solid #1098ad;
 	}
 	40% {
-		transform: translateY(-30px) rotate(45deg);
+		transform: rotate(45deg);
 	}
 	43% {
 		border: solid #07b39b;
 	}
 	50% {
-		transform: translateY(0) rotate(45deg);
+		transform: rotate(45deg);
 	}
 	50% {
 		border: solid #6fba82;
@@ -98,7 +100,7 @@ h2 {
 		border: solid #07b39b;
 	}
 	60% {
-		transform: translateY(-15px) rotate(45deg);
+		transform: rotate(45deg);
 	}
 	65% {
 		border: solid #1098ad;
@@ -110,7 +112,7 @@ h2 {
 		border: solid #a166ab;
 	}
 	80% {
-		transform: translateY(0) rotate(45deg);
+		transform: rotate(45deg);
 	}
 	87% {
 		border: solid #ef4e7b;
@@ -119,11 +121,11 @@ h2 {
 		border: solid #f37055;
 	}
 	100% {
-		transform: translateY(0) rotate(45deg);
+		transform: rotate(45deg);
 	}
 }
 
-#BIO {
+#pop-up {
 	position: fixed;
 	visibility: hidden;
 	opacity: 0;
@@ -134,7 +136,7 @@ h2 {
 	transition: opacity 1s;
 }
 
-#BIO:target {
+#pop-up:target {
 	display: inline-block;
 	position: relative;
 	visibility: visible;
